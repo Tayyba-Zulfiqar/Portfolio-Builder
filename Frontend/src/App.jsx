@@ -1,10 +1,10 @@
 import "./App.css";
-import Header from "../src/Components/UI-Elements/Header";
+import LandingPage from "./Components/UI-Elements/LandingPage/LandingPage";
 
 function App() {
   return (
     <>
-      <Header />
+      <LandingPage />
     </>
   );
 }
