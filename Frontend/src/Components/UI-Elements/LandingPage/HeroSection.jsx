@@ -2,11 +2,10 @@ const HeroSection = () => {
   return (
     <main className="hero">
       <div className="container">
-        <div className="floating-element bear">🧸</div>
-        <div className="floating-element cupcake">🧁</div>
+        <div className="floating-element bear">🦋</div>
         <div className="floating-element flower1">🌸</div>
-        <div className="floating-element flower2">🌺</div>
-        <div className="floating-element heart1">💖</div>
+        <div className="floating-element flower2">🦢</div>
+        <div className="floating-element heart1">🌼</div>
         <div className="floating-element heart2">💕</div>
         <div className="floating-element star">⭐</div>
         <div className="floating-element rainbow">🌈</div>
@@ -15,7 +14,7 @@ const HeroSection = () => {
           <h1 className="hero-title">
             Create Your
             <span className="gradient-text"> Dream Portfolio</span>
-            <span className="sparkle">✨</span>
+            <span className="bunny">🐰</span>
           </h1>
 
           <p className="hero-description">
