@@ -1,0 +1,103 @@
+.hero {
+  padding: 120px 0 80px;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.floating-element {
+  position: absolute;
+  font-size: 2rem;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 1;
+}
+
+.flower1 {
+  top: 60%;
+  left: 5%;
+  animation: spin 6s linear infinite;
+}
+
+.butterfly {
+  top: 80%;
+  right: 8%;
+  animation: float 3s ease-in-out infinite 2s;
+}
+
+.flower2 {
+  top: 60%;
+  right: -2%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.swan {
+  top: 80%;
+  left: 15%;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  line-height: 1.2;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ff6b9d, #c44569, #f8b500, #ff9ff3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease-in-out infinite;
+}
+
+.bunny {
+  display: inline-block;
+}
+
+.hero-description {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background: linear-gradient(45deg, #ff6b9d, #c44569, #f8b500);
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 30px rgba(255, 107, 157, 0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.cta-button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(255, 107, 157, 0.6);
+}
+
+.button-icon {
+  font-size: 1.3rem;
+  animation: wiggle 2s ease-in-out infinite;
+}

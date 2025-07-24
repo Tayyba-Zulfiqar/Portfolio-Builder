@@ -1,0 +1,84 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 182, 193, 0.3);
+  padding: 15px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-icon {
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff6b9d, #c44569, #f8b500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  color: #ff6b9d;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: rgba(255, 107, 157, 0.1);
+  transform: translateY(-2px);
+}
+
+.signup-btn {
+  background: linear-gradient(45deg, #ff6b9d, #c44569, #f8b500);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+}
+
+.signup-btn:hover {
+  transform: translateY(-3px) rotate(2deg);
+  box-shadow: 0 8px 25px rgba(255, 107, 157, 0.6);
+}
