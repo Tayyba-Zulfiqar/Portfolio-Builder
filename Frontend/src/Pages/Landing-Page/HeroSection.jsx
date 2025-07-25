@@ -1,6 +1,6 @@
 import "./HeroSection.css";
 
-const HeroSection = () => {
+export default function HeroSection() {
   return (
     <main className="hero">
       <div className="container">
@@ -29,6 +29,4 @@ const HeroSection = () => {
       </div>
     </main>
   );
-};
-
-export default HeroSection;
+}

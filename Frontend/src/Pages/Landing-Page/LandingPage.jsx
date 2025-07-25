@@ -1,13 +1,11 @@
 import Header from "./Header";
 import HeroSection from "./HeroSection";
 
-const LandingPage = () => {
+export default function LandingPage() {
   return (
     <>
       <Header />
       <HeroSection />
     </>
   );
-};
-
-export default LandingPage;
+}
