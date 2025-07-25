@@ -63,7 +63,12 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
-
+.create-title {
+  color: #6b7280;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
 .form {
   width: 100%;
 }
@@ -155,7 +160,23 @@ body {
   z-index: 2;
 }
 
-/* Auth-specific Animations */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #aaa;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s ease-in-out;
+}
+
+.close-button:hover {
+  color: #ff6b9d;
+}
+
 @keyframes slideIn {
   0% {
     opacity: 0;
