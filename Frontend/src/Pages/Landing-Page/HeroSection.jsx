@@ -1,6 +1,7 @@
 import "./HeroSection.css";
-
+import { useNavigate } from "react-router-dom";
 export default function HeroSection() {
+  const navigate = useNavigate();
   return (
     <main className="hero">
       <div className="container">
@@ -21,7 +22,9 @@ export default function HeroSection() {
             required - just pure creativity and lots of cute magic🌷
           </p>
 
-          <button className="cta-button">
+          <button
+            className="cta-button"
+            onClick={() => navigate("/authenticate")}>
             <span>Start Creating Free</span>
             <span className="button-icon">🎨</span>
           </button>
