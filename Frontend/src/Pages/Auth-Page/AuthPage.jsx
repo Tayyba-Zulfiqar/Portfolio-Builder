@@ -5,9 +5,13 @@ import {
   loginSchema,
 } from "../../../Shared/Validations/AuthSchema.js";
 import { useNavigate } from "react-router-dom";
+import useAuth from "../../../Shared/Context/useAuth.js";
 
 export default function AuthPage() {
   const navigate = useNavigate();
+
+  //Context provider:
+  const { login, signup } = useAuth();
   //getting params:
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -19,24 +23,23 @@ export default function AuthPage() {
   };
 
   //Handling form submissions:
-  const submitHandler = (data) => {
+  const submitHandler = (userData) => {
     if (mode === "signup") {
-      localStorage.setItem("user", JSON.stringify(data));
-      console.log("account created successfully");
-      navigate("/");
-      console.log(data);
-    } else {
-      const savedUsers = JSON.parse(localStorage.getItem("user")) || [];
+      const result = signup(userData);
 
-      if (
-        savedUsers &&
-        savedUsers.email === data.email &&
-        savedUsers.password === data.password
-      ) {
-        console.log("logged in successfully");
+      if (result.success) {
+        console.log(result.message);
         navigate("/");
       } else {
-        console.log("logged in failed");
+        console.log(result.message);
+      }
+    } else {
+      const result = login(userData);
+      if (result.success) {
+        console.log(result.message);
+        navigate("/");
+      } else {
+        console.log(result.message);
       }
     }
   };
