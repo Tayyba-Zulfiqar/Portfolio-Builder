@@ -1,0 +1,76 @@
+.error-number {
+  font-size: 150px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1;
+  text-align: center;
+  color: #de5784;
+  margin-top: -30px;
+}
+
+.cute-face {
+  font-size: 80px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+  text-align: center;
+}
+
+.notfound-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #de5784;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.button-wrapper {
+  text-align: center;
+}
+
+.home-button {
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #ff6b9d, #8d6af4);
+  color: white;
+  border-radius: 50px;
+  border-width: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .error-number {
+    font-size: 120px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .message {
+    font-size: 16px;
+  }
+
+  .cute-face {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-number {
+    font-size: 100px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .cute-face {
+    font-size: 50px;
+  }
+}

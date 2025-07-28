@@ -23,7 +23,7 @@ function App() {
       />
       <Route path="/portfolio/:portfolioId/edit" element={<PortfolioEdit />} />
       <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<NotFound />} /> {/*COMPLETED*/}
     </Routes>
   );
 }
