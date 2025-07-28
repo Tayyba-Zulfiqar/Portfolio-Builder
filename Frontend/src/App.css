@@ -3,7 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.hero {
+  padding: 120px 0 80px;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 body {
   font-family: "Arial", sans-serif;
   background: linear-gradient(

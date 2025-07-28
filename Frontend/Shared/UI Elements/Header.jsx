@@ -1,6 +1,6 @@
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
-import useAuth from "../../../Shared/Context/useAuth.js";
+import useAuth from "../Context/useAuth.js";
 export default function Header() {
   const navigate = useNavigate();
 
@@ -31,10 +31,20 @@ export default function Header() {
         {currentUser && (
           <div className="auth-buttons">
             <button
+              className="login-btn"
+              onClick={() => navigate("/templates")}>
+              Templates
+            </button>
+            <button
+              className="login-btn"
+              onClick={() => navigate("/dashboard")}>
+              Library
+            </button>
+            <button
               className="logout-btn"
               onClick={() => {
                 logout();
-                navigate("/authenticate?mode=login");
+                navigate("/");
               }}>
               Logout
             </button>

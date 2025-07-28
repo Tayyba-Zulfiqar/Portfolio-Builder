@@ -1,15 +1,12 @@
 import "./HeroSection.css";
 import { useNavigate } from "react-router-dom";
+import FloatingEmojis from "../../../Shared/UI Elements/FloatingEmojis";
 export default function HeroSection() {
   const navigate = useNavigate();
   return (
     <main className="hero">
       <div className="container">
-        <div className="floating-element flower1">🌸</div>
-        <div className="floating-element butterfly">🦋</div>
-        <div className="floating-element flower2">🌼</div>
-        <div className="floating-element swan">🦢</div>
-
+        <FloatingEmojis />
         <div className="hero-content">
           <h1 className="hero-title">
             Create Your

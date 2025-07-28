@@ -29,7 +29,7 @@ export default function AuthPage() {
 
       if (result.success) {
         console.log(result.message);
-        navigate("/");
+        navigate("/templates");
       } else {
         console.log(result.message);
       }
@@ -37,7 +37,7 @@ export default function AuthPage() {
       const result = login(userData);
       if (result.success) {
         console.log(result.message);
-        navigate("/");
+        navigate("/templates");
       } else {
         console.log(result.message);
       }

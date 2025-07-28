@@ -12,8 +12,8 @@ import AuthPage from "./Pages/Auth-Page/AuthPage";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/authenticate" element={<AuthPage />} />
+      <Route path="/" element={<LandingPage />} /> {/* COMPLETED*/}
+      <Route path="/authenticate" element={<AuthPage />} /> {/* COMPLETED*/}
       <Route path="/templates" element={<TemplatesList />} />
       <Route path="/templates/:templateId" element={<TemplatePreview />} />
       <Route path="/portfolio/new/:templateId" element={<PortfolioForm />} />
