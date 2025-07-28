@@ -14,7 +14,7 @@ function App() {
     <Routes>
       <Route path="/" element={<LandingPage />} /> {/* COMPLETED*/}
       <Route path="/authenticate" element={<AuthPage />} /> {/* COMPLETED*/}
-      <Route path="/templates" element={<TemplatesList />} />
+      <Route path="/templates" element={<TemplatesList />} /> {/*COMPLETED*/}
       <Route path="/templates/:templateId" element={<TemplatePreview />} />
       <Route path="/portfolio/new/:templateId" element={<PortfolioForm />} />
       <Route

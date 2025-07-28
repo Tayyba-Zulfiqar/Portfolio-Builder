@@ -14,10 +14,6 @@ export default function CardHeader() {
         <div className="cards-grid">
           <Cards />
         </div>
-
-        <div className="footer-text">
-          <p>Hover over the cards to see the magic happen! ✨</p>
-        </div>
       </div>
     </>
   );
