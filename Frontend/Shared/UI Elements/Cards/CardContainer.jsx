@@ -5,7 +5,7 @@ export default function CardHeader() {
     <>
       <div className="container">
         <div className="head">
-          <h1 className="title">Aesthetic CV Templates ✨</h1>
+          <h1 className="title">Resume Templates </h1>
           <p className="subtitle">
             Discover stunning resume designs that make you stand out 🌸
           </p>

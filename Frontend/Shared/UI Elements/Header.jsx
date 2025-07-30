@@ -1,6 +1,7 @@
 import "./Header.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import useAuth from "../Context/useAuth.js";
+
 export default function Header() {
   const navigate = useNavigate();
 
@@ -30,16 +31,21 @@ export default function Header() {
         )}
         {currentUser && (
           <div className="auth-buttons">
-            <button
-              className="login-btn"
-              onClick={() => navigate("/templates")}>
+            <NavLink
+              to="/templates"
+              className={({ isActive }) =>
+                isActive ? "templates-btn active" : "templates-btn"
+              }>
               Templates
-            </button>
-            <button
-              className="login-btn"
-              onClick={() => navigate("/dashboard")}>
-              Library
-            </button>
+            </NavLink>
+            <NavLink
+              to="/dashboard"
+              className={({ isActive }) =>
+                isActive ? "dashboard-btn active" : "dashboard-btn"
+              }>
+              Dashboard
+            </NavLink>
+
             <button
               className="logout-btn"
               onClick={() => {

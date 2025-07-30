@@ -16,6 +16,7 @@
   align-items: center;
 }
 
+/* 🔹 Logo styling */
 .logo {
   display: flex;
   align-items: center;
@@ -57,11 +58,41 @@
   padding: 10px 20px;
   border-radius: 25px;
   transition: all 0.3s ease;
+  margin-right: 10px;
 }
 
 .login-btn:hover {
   background: rgba(255, 107, 157, 0.1);
   transform: translateY(-2px);
+}
+
+.dashboard-btn,
+.templates-btn {
+  background: none;
+  border: none;
+  color: #ff6b9d;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 0;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  margin-right: 30px;
+}
+
+.dashboard-btn:hover,
+.templates-btn:hover {
+  color: #c44569;
+  background: none;
+  transform: none;
+}
+
+.templates-btn.active,
+.dashboard-btn.active {
+  border-bottom: 2px solid #ff6b9d;
+  font-weight: bold;
 }
 
 .signup-btn,
@@ -76,6 +107,8 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+  text-decoration: none;
+  display: inline-block;
 }
 
 .signup-btn:hover,

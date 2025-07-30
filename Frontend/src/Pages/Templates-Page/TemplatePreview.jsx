@@ -1,3 +1,3 @@
 export default function TemplatePreview() {
-  return <h1>here users will preview selected template</h1>;
+  return <h1>templates preview here</h1>;
 }
